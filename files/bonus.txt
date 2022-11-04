@@ -1,0 +1,49 @@
+ls *
+ls *.*
+ls .*
+cat M*le
+cat M*ee
+cat Make*file
+cp [A-Z]* dir2
+(cd ../.. && pwd) ; pwd
+ls -z || (cd ../../..&&pwd)
+(ls)
+(ls && pwd)
+(ls && pwd) > test ; cat test ; rm test
+(> pwd)
+(< pwd) ; rm pwd
+( ( ls ) )
+> test (ls && pwd)
+()
+( ( ) )
+( ( ( ( ) ) ) )
+( ( ls ) )
+( ( ( ( ( pwd) ) ) ) )
+( ( ) ls )
+( ( ls&&pwd ) )
+( ( ls ) &&pwd ) ; ls
+( ( ( ls|wc ) ; cat Makefile|grep oui ) )
+() pwd
+ls && (ls)
+() ls
+ls ; ()
+> pwd (ls)
+(ls && pwd | wc) > top ; cat top ; rm top
+(ls && pwd | wc) > top ; (ls && pwd | wc) > top ; cat top ; rm top
+(ls && pwd | wc) >> top;echo hello&&(ls && pwd | wc) >> top ; cat top ; rm top
+(pwd|wc)<top
+(ls && pwd | wc) < top
+(ls -z || pwd | wc) < top
+echo hello > top ; (pwd|wc) < top ; rm top
+echo hello > top ; (ls && pwd|wc) < top ; rm top
+echo hello > top ; (ls -z || pwd|wc) < top ; rm top
+(ls -z || pwd ; ls)
+ls || (cat Makefile|grep file) ; (pwd|wc)
+ls -z && (ls) ; (pwd)
+(ls > file/file && pwd) > top
+ls > file/file && pwd > top ; rm top
+(ls && ( ( pwd ) ) )
+(ls||pwd);(ls||pwd)
+(lss||pwd);(lss||pwd)
+(lss&&pwd);(lss&&pwd)
+(lss||pwd);(lss||pwd)

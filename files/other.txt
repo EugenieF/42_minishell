@@ -1,0 +1,52 @@
+""
+''
+"ls"
+gdagadgag
+ls -Z
+cd gdhahahad
+ls -la | wtf
+export a ; echo $?
+export % ; echo $?
+echo "test" > a && run_test 'cat a ; echo $?' && rm a
+cat a ; echo $?
+pwd ; echo $?
+export a | echo $?
+echo lala ; echo $?
+echo lala | echo $?
+pwd ; echo $?
+pwd | echo $?
+cd / ; echo $?
+ cd / | echo $?
+cd ~/ ; echo $?
+ cd ~/ | echo $?
+cd /error ; echo $?
+cd ~/error ; echo $?
+export a ; unset a ; echo $?
+export a | unset a | echo $?
+unset a ; echo $?
+unset a | echo $?
+echo $? ; echo $? ; echo $?
+echo $? | echo $? | echo $?
+cd error ; echo $?
+cd error error ; echo $?
+./error ; echo $?
+cat <error ; echo $?
+echo testing multi ; echo "test 1 ; | and 2" ; cat tests/lorem.txt | grep Lorem
+cd random_cmd; echo $?
+cd random_cmd; cd $?
+touch test_file ; ./test_file ; rm test_file
+cat bla
+file_name
+not_cmd
+export test=a ; echo $test
+ls bonjour ; echo $?
+.
+..
+""
+$
+$LESS$VAR
+ctrl-\
+ctrl-C
+ctrl-D
+/bin/echo bonjour
+touch test.sh ; ./test.sh ; rm test.sh a
